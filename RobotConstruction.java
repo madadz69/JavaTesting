@@ -17,9 +17,9 @@ public class RobotConstruction {
             "Oliver_tracks"
         };
 
-        String partsNeeded = "wheels,sensors,engine";
+        String partsUsed = "wheels,sensors,engine";
         String[] expectedRobotsBuilt = new String[]{"R2D2", "Kitt"};
-        String[] robotsActuallyBuilt = makeRobot(robotParts, partsNeeded);
+        String[] robotsActuallyBuilt = makeRobot(robotParts, partsUsed);
 
         if (Arrays.equals(expectedRobotsBuilt, robotsActuallyBuilt)) {
             System.out.println("Success!");
@@ -31,8 +31,8 @@ public class RobotConstruction {
         }
     }
 
-    public static String[] makeRobot(String[] robotParts, String partsNeeded) {
-        // your logic here
+    public static String[] makeRobot(String[] robotParts, String partsUsed) {
+        // your logic here, what robots can we make with the parts?
         return new String[0];
     }
 }
